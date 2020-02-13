@@ -212,6 +212,7 @@ section {
   background: url(../img/right-arrow.svg) center no-repeat;
   background-size: 70%;
 }
+
 @media (max-width: 991px) {
   .main {
     background-position: top right;
