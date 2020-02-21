@@ -63,13 +63,13 @@
             </div>
             <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2">
               <div class="main-form">
-                <h2 class="main-form-header">Для рассчета точнойстоимости <br>закажите <strong>выезд замерщика</strong></h2>
-                <form action="#">
+                <h2 class="main-form-header">Для рассчета точной стоимости <br>закажите <strong>выезд замерщика</strong></h2>
+                <form class="form"action="#">
                   <label for="#">Ваше имя</label>
-                  <input class="main-form-input" type="text">
+                  <input class="form-input" type="text">
                   <label for="#">Номер телефона</label>
-                  <input class="main-form-input" type="text">
-                  <button class="main-form-btn button" type="submit">оставьте заявку</button>
+                  <input class="form-input" type="text">
+                  <button class="form-btn button" type="submit">оставьте заявку</button>
                   <small>Подарок в день обращения</small>
                 </form>
               </div>
@@ -205,7 +205,7 @@
         <div class="feedback-slider_item">
           <div class="row">
             <div class="col-md-6">
-              <div class="fotorama" data-nav="thumbs">
+              <div class="fotorama" data-width="100%" data-nav="thumbs">
                 <img src="img/feedback/photo/1.jpg" alt="">
                 <img src="img/feedback/photo/2.jpg" alt="">
                 <img src="img/feedback/photo/3.jpg" alt="">
@@ -241,7 +241,7 @@
         <div class="feedback-slider_item">
           <div class="row">
             <div class="col-md-6">
-              <div class="fotorama" data-nav="thumbs">
+              <div class="fotorama" data-width="100%" data-nav="thumbs">
                 <img src="img/feedback/photo/1.jpg" alt="">
                 <img src="img/feedback/photo/2.jpg" alt="">
                 <img src="img/feedback/photo/3.jpg" alt="">
@@ -277,7 +277,7 @@
         <div class="feedback-slider_item">
           <div class="row">
             <div class="col-md-6">
-              <div class="fotorama" data-nav="thumbs">
+              <div class="fotorama" data-width="100%" data-nav="thumbs">
                 <img src="img/feedback/photo/1.jpg" alt="">
                 <img src="img/feedback/photo/2.jpg" alt="">
                 <img src="img/feedback/photo/3.jpg" alt="">
@@ -310,9 +310,34 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> <!-- feedback slider -->
 
-    </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+
+          <div class="feedback-form">
+            <h3>Хотите так же? Оставьте Ваши контактные данные</h3>
+            <form class="form" action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="#">Ваше имя</label>
+                  <input class="form-input" type="text">
+                </div>
+                <div class="col-md-6">
+                  <label for="#">Номер телефона</label>
+                  <input class="form-input" type="text">
+                </div>
+              </div> <!-- row -->
+              
+              <button class="form-btn feedback-btn button" type="submit">оставьте заявку</button>
+            </form>
+          </div> <!-- feedback-form -->
+
+        </div> <!-- col-md-8 -->
+      </div> <!-- row -->
+
+    </div> <!-- container -->
+    <img class="hand" src="img/hand.png" alt="hand">
   </section>
 
     <!-- Модальные окна -->
@@ -328,15 +353,15 @@
             Заинтересовало?
           </h4>
           <p>Оставьте свои контактные данные <br>для связи</p>
-          <div class="main-form popup-form">
-            <form action="#">
+          <div class="form popup-form">
+            <form class="form" action="#">
               <label for="#">Ваше имя</label>
-              <input class="main-form-input" type="text">
+              <input class="form-input" type="text">
               <label for="#">Номер телефона</label>
-              <input class="main-form-input" type="text">
+              <input class="form-input" type="text">
               <label for="#">Сообщение</label>
-              <textarea class="main-form-input" rows="5"></textarea>
-              <button class="main-form-btn button" type="submit">оставьте заявку</button>
+              <textarea class="form-input" rows="5"></textarea>
+              <button class="form-btn button" type="submit">оставьте заявку</button>
             </form>
           </div>
         </div>
