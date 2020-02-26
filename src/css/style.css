@@ -366,6 +366,18 @@ section {
   left: 0;
   max-width: 30rem;
 }
+/* Схема работы */
+.scheme {
+  background: #ffffff url(../img/scheme-bg.png) bottom right -10rem no-repeat;
+  background-size: 65rem;
+}
+.scheme-block {
+  min-height: 30rem;
+}
+.scheme-block h3 {
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
 /* Оформление модальных окон */
 .popup {
   display: none;
@@ -473,5 +485,12 @@ section {
   }
   .feedback-next-btn {
     right: 0;
+  }
+  .scheme {
+    background: none;
+    text-align: center;
+  }
+  .scheme-block {
+    min-height: 20rem;
   }
 }
