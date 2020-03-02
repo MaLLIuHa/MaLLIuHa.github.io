@@ -450,7 +450,7 @@ section {
 		margin-left: -19rem;
 	}
 	&-list {
-		border: 4px solid @icons-color;
+		border: 4px solid;
 		margin-bottom: 2rem;
 		padding: 2rem;
 		min-height: 35rem;
@@ -488,11 +488,37 @@ section {
 			}
 		}
 		&_good {
+			border-color: @icons-color;
 			ul li:before {
 				background: url(../img/problems/checked-symbol.svg) center no-repeat;
 				background-size: 70%;
 			}
 		}
+	}
+}
+/* Материалы */
+.materials {
+	background: @light url(../img/materials/materials-bg.jpg ) center no-repeat;
+	background-size: cover;
+	&-slider {
+		padding-top: 5rem;
+	}
+	&-link {
+		color: @icons-color;
+		border-bottom: 1px dotted @icons-color;
+		&:hover {
+			color: darken(@icons-color,10%);
+		}
+	}
+	&-offer {
+		margin-top: 4rem;
+	}
+	p {
+		min-height: 3rem;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
 	}
 }
 /* Оформление модальных окон */
@@ -681,6 +707,7 @@ section {
 @bg-light: #f5f5f5;
 @light: #fff;
 @border-input: #dddddd;
+@problems-color: #e8e8e8;
 
 /* Basic settings */
 html {
@@ -1082,6 +1109,62 @@ section {
 		font-size: 1.9rem;
 	}
 }
+/* Мы развеем все опасения */
+.problems {
+	position: relative;
+	&-woman {
+		position: absolute;
+		width: 30rem;
+		bottom: 0;
+		left: 50%;
+		margin-left: -19rem;
+	}
+	&-list {
+		border: 4px solid @icons-color;
+		margin-bottom: 2rem;
+		padding: 2rem;
+		min-height: 35rem;
+		h4 {
+			font-size: 2.1rem;
+			.bold();
+		}
+		ul {
+			list-style: none;
+			padding-left: 0;
+			padding-top: 2rem;
+			li {
+				&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 3rem;
+				height: 3rem;
+				}
+				padding-left: 3.5rem;
+				position: relative;
+				margin-bottom: 3rem;
+			}
+		}
+		&_bad {
+			border-color: @problems-color;
+			h4 {
+				opacity: 0.5;
+			}
+			ul li:before {
+				background: url(../img/problems/problem.svg) center no-repeat;
+				background-size: 70%;
+			}
+		}
+		&_good {
+			ul li:before {
+				background: url(../img/problems/checked-symbol.svg) center no-repeat;
+				background-size: 70%;
+			}
+		}
+	}
+}
 /* Оформление модальных окон */
 .popup {
 	display: none;
@@ -1137,6 +1220,11 @@ section {
 			min-height: 11rem;
 		}
 	}
+	.problems {
+		&-list {
+			min-height: 40rem;
+		}
+	}
 }
 @media (max-width: 991px) {
 	.main {
@@ -1177,6 +1265,14 @@ section {
 	}
 	.hand {
 		display: none;
+	}
+	.problems {
+		&-list {
+			min-height: auto;
+		}
+		&-woman {
+			display: none;
+		}
 	}
 }
 
