@@ -64,11 +64,11 @@
             <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2">
               <div class="main-form wow fadeInRight">
                 <h2 class="main-form-header">Для рассчета точной стоимости <br>закажите <strong>выезд замерщика</strong></h2>
-                <form class="form"action="#">
+                <form class="form" action="mailer/smart.php" method="POST">
                   <label for="#">Ваше имя</label>
-                  <input class="form-input" required type="text">
+                  <input class="form-input" required type="text" name="user_name">
                   <label for="#">Номер телефона</label>
-                  <input class="form-input phonepls" required type="text">
+                  <input class="form-input phonepls" required type="text" name="user_phone">
                   <button class="form-btn button" type="submit">оставьте заявку</button>
                   <small>Подарок в день обращения</small>
                 </form>
@@ -116,7 +116,7 @@
           </div>
           <h3>Точно в срок</h3>
           <p>Работаем строго по установленным срокам, которые прописаны 
-в договоре. Если не успеваем, Вы платите меньше</p>
+в договоре. <br>Если не успеваем, Вы платите меньше</p>
         </div>
         <div class="features-block  wow fadeInUp" data-wow-delay="0.4s"">
           <div class="features-img">
@@ -126,7 +126,7 @@
             </picture>
           </div>
           <h3>Экономите на материалах</h3>
-          <p>Мы являемся структурным подразделением компании поставщика строительных смесей gicema.ru  и даём Вам самые 
+          <p>Мы являемся структурным подразделением компании <br>поставщика строительных смесей gicema.ru и даём Вам самые 
 выгодные цены.
 </p>
         </div>
@@ -317,15 +317,15 @@
 
           <div class="feedback-form wow fadeInUp" data-wow-delay="0.1s">
             <h3>Хотите так же? Оставьте Ваши контактные данные</h3>
-            <form class="form" action="#">
+            <form class="form" action="mailer/smart.php" method="POST">
               <div class="row">
                 <div class="col-md-6">
                   <label for="#">Ваше имя</label>
-                  <input class="form-input" required type="text">
+                  <input class="form-input" required type="text" name="user_name">
                 </div>
                 <div class="col-md-6">
                   <label for="#">Номер телефона</label>
-                  <input class="form-input phonepls" required type="text">
+                  <input class="form-input phonepls" required type="text" name="user_phone">
                 </div>
               </div> <!-- row -->
               
@@ -654,11 +654,11 @@
             <div class="col-lg-4 col-lg-offset-3 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2">
               <div class="main-form wow fadeInRight" data-wow-delay="0.1s">
                 <h2 class="main-form-header">Оставьте контактные данные для связи</h2>
-                <form class="form"action="#">
+                <form class="form" action="mailer/smart.php" method="POST">
                   <label for="#">Ваше имя</label>
-                  <input class="form-input" required type="text">
+                  <input class="form-input" required type="text" name="user_name">
                   <label for="#">Номер телефона</label>
-                  <input class="form-input phonepls" required type="text">
+                  <input class="form-input phonepls" required type="text" name="user_phone">
                   <button class="form-btn tour-btn button" type="submit">Записаться на просмотр</button>
                   <small>Подберем ближайший к Вам объект</small>
                 </form>
@@ -717,15 +717,15 @@
         <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-3">
           <div class="main-form contacts-form wow fadeInRight" data-wow-delay="0.1s">
                 <h2 class="contacts-form-header">Оставьте контактные данные для связи</h2>
-                <form class="form"action="#">
+                <form class="form" action="mailer/smart.php" method="POST">
                   <label for="#">Ваше имя</label>
-                  <input class="form-input" required type="text">
+                  <input class="form-input" required type="text" name="user_name">
                   <label for="#">Номер телефона</label>
-                  <input class="form-input phonepls" required type="text">
+                  <input class="form-input phonepls" required type="text" name="user_phone">
                   <label for="#" >E-mail</label>
-                  <input class="form-input" id="contactsForm" required type="text">
-                  <label for="#">Сообщение</label>
-                  <textarea class="form-textarea" rows="5"></textarea>
+                  <input class="form-input" id="contactsForm" required type="text" name="user_mail">
+                  <label for="#" >Сообщение</label>
+                  <textarea class="form-textarea" rows="5" name="user_message"></textarea>
                   <button class="form-btn button" type="submit">оставьте заявку</button>
                 </form>
               </div>
@@ -771,13 +771,13 @@
           </h4>
           <p>Оставьте свои контактные данные <br>для связи</p>
           <div class="form popup-form">
-            <form class="form" action="#">
+            <form class="form" action="mailer/smart.php" method="POST">
               <label for="#">Ваше имя</label>
-              <input class="form-input" require type="text">
+              <input class="form-input" require type="text" name="user_name">
               <label for="#">Номер телефона</label>
-              <input class="form-input phonepls" require type="text">
+              <input class="form-input phonepls" require type="text" name="user_phone">
               <label for="#">Сообщение</label>
-              <textarea class="form-input" rows="5"></textarea>
+              <textarea class="form-input" rows="5" name="user_message"></textarea>
               <button class="form-btn button" type="submit">оставьте заявку</button>
             </form>
           </div>
@@ -786,7 +786,7 @@
     </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
     <!-- Подключаем стили slick slider -->
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
@@ -798,6 +798,25 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/inputmask.js"></script>
     <script src="inputmask.js"></script>
+
+    <!-- Скрипт для отправки данных на почту -->
+    <script>
+      $('form').submit(function(event) {
+        event.preventDefault();
+        $.ajax({
+          type: "POST",
+          url: "mailer/smart.php",
+          data: $(this).serialize()
+        }).done(function() {
+          $(this).find("input").val("");
+          alert("Сообщение успешно отправлено");
+          $("form").trigger('reset');
+        });
+        return false;
+        });
+    </script>
+
+    <!-- Скрипты для инпутов формы -->
     <script> 
       $(document).ready(function(){   
         $("#contactsForm").inputmask("email")
